@@ -1,4 +1,4 @@
-package bot;
+package bot.status;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package bot.Messages;
+package bot.messages;
 
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 

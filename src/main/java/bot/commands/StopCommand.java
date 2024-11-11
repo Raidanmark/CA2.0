@@ -1,10 +1,10 @@
 package bot.commands;
 
-import bot.Messages.CommandContext;
-import bot.Status;
+import bot.messages.CommandContext;
+import bot.status.Status;
 
 
-import static bot.commands.Messages.STOP_COMMAND_MESSAGE;
+import static bot.commands.CommandResponse.STOP_COMMAND_MESSAGE;
 
 public class StopCommand implements Command {
 

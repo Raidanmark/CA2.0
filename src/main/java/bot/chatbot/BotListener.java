@@ -1,9 +1,7 @@
 package bot.chatbot;
 
-import bot.Messages.JDAMessageSender;
-import bot.Messages.MessageSender;
-import bot.StatusManager;
-import bot.Status;
+import bot.messages.JDAMessageSender;
+import bot.messages.MessageSender;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;

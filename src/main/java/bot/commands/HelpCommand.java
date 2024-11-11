@@ -1,10 +1,10 @@
 package bot.commands;
 
-import bot.Messages.CommandContext;
-import bot.Status;
+import bot.messages.CommandContext;
+import bot.status.Status;
 
-import static bot.commands.Messages.HELP_COMMAND_MESSAGE_ACTIVE;
-import static bot.commands.Messages.HELP_COMMAND_MESSAGE_INACTIVE;
+import static bot.commands.CommandResponse.HELP_COMMAND_MESSAGE_ACTIVE;
+import static bot.commands.CommandResponse.HELP_COMMAND_MESSAGE_INACTIVE;
 
 public class HelpCommand implements Command {
 

@@ -1,4 +1,6 @@
-package Ticker;
+package bot.ticker;
+
+import bot.data.Data;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -6,7 +8,7 @@ import java.util.ArrayList;
 public class Ticker {
 
     private String name;
-    private Data data;
+
     private boolean methodMACD;
     private boolean methodSMA;
     private Resources resources;

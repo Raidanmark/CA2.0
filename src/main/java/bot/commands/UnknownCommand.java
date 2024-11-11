@@ -1,9 +1,9 @@
 package bot.commands;
 
-import bot.Messages.CommandContext;
-import bot.Status;
+import bot.messages.CommandContext;
+import bot.status.Status;
 
-import static bot.commands.Messages.UNKNOWN_COMMAND_MESSAGE;
+import static bot.commands.CommandResponse.UNKNOWN_COMMAND_MESSAGE;
 
 public class UnknownCommand implements Command {
 

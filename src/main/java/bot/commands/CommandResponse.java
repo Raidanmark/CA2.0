@@ -1,6 +1,6 @@
 package bot.commands;
 
-public class Messages {
+public class CommandResponse {
     public static final String START_COMMAND_MESSAGE = "Starting Bot";
     public static final String STOP_COMMAND_MESSAGE = "Stopping Bot";
     public static final String HELP_COMMAND_MESSAGE_INACTIVE = "Available commands: <<!Start>>";

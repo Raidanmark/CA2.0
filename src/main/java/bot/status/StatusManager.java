@@ -1,4 +1,4 @@
-package bot;
+package bot.status;
 
 import java.util.HashMap;
 import java.util.Map;
