@@ -9,6 +9,7 @@ public class WebSocketClient extends WebSocketListener {
     private final List<String> tickers;
     private final String timeframe;
     private WebSocket webSocket;
+    private OkHttpClient client;
 
     public WebSocketClient(String url, List<String> tickers, String timeframe) {
         this.url = url;
@@ -17,10 +18,20 @@ public class WebSocketClient extends WebSocketListener {
     }
 
     public void connect() {
-        OkHttpClient client = new OkHttpClient();
+        client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
         webSocket = client.newWebSocket(request, this);
-        client.dispatcher().executorService().shutdown(); // Останавливает потоки после завершения
+    }
+
+    public void disconnect() {
+        if (webSocket != null) {
+            webSocket.close(1000, "Disconnecting");
+            webSocket = null;
+        }
+        if (client != null) {
+            client.dispatcher().executorService().shutdown();
+            client = null;
+        }
     }
 
     @Override
@@ -59,5 +70,12 @@ public class WebSocketClient extends WebSocketListener {
     @Override
     public void onFailure(WebSocket webSocket, Throwable t, Response response) {
         System.err.println("WebSocket Error: " + t.getMessage());
+        reconnect();
+    }
+
+    private void reconnect() {
+        System.out.println("Attempting to reconnect...");
+        disconnect();
+        connect();
     }
 }
