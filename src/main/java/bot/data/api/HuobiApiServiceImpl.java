@@ -13,6 +13,7 @@ import java.util.*;
 
 public class HuobiApiServiceImpl implements HuobiApiService {
     private static final String BASE_URL = "https://api.huobi.pro";
+//    RateLimiter rateLimiter = RateLimiter.create(2);
     private RateLimiter rateLimiter = RateLimiter.create(5); // 5 запросов в секунду
     private ObjectMapper objectMapper = new ObjectMapper();
     private HttpClient httpClient = HttpClient.newHttpClient();
