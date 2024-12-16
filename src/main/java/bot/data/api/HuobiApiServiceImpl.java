@@ -1,6 +1,6 @@
 package bot.data.api;
 
-import bot.ticker.Price;
+import bot.data.data.Price;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.util.concurrent.RateLimiter;

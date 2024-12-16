@@ -1,4 +1,4 @@
-package bot.data;
+package bot.data.data;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,6 +13,7 @@ public class DataConfig {
     private static long timeWindowMillis; // Длительность временного окна в миллисекундах
     private static int AmountOfCryptocurrency;
     private static int CandlesAmount;
+    private static String socketlink;
 
 
 
@@ -21,6 +22,8 @@ public class DataConfig {
 
         maxRequests = 1;
         timeWindowMillis = 100;
+
+        socketlink = "wss://ws.kraken.com/v2";
 
 
         APIlink = "";
@@ -68,5 +71,8 @@ public class DataConfig {
     }
     public static int getCandlesAmount() {
         return CandlesAmount;
+    }
+    public static String getSocketlink() {
+        return socketlink;
     }
 }

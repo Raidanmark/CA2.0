@@ -1,9 +1,9 @@
-package bot.data;
+package bot.data.data;
 
 import bot.data.api.CryptoDataCollector;
 import bot.data.api.HuobiApiService;
 import bot.data.api.HuobiApiServiceImpl;
-import bot.ticker.TickerData;
+import bot.data.websocket.WebSocketManager;
 
 import java.util.ArrayList;
 import java.util.List;

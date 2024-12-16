@@ -1,8 +1,7 @@
-package analysis_methods.macd;
+package bot.analysis_methods.macd;
 
 
 import java.util.ArrayList;
-import java.util.Deque;
 import java.util.List;
 
 public class MACDUtils {

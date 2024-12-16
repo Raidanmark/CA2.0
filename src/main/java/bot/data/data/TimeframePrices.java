@@ -1,4 +1,4 @@
-package bot.ticker;
+package bot.data.data;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
 package bot.data.api;
 
-import bot.data.DataConfig;
-import bot.ticker.Price;
-import bot.ticker.TickerData;
-import bot.ticker.Timeframe;
-import bot.ticker.TimeframePrices;
+import bot.data.data.DataConfig;
+import bot.data.data.Price;
+import bot.data.data.TickerData;
+import bot.data.data.Timeframe;
+import bot.data.data.TimeframePrices;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +37,7 @@ public class CryptoDataCollector {
                 tickerData.tickername = symbol; // Устанавливаем tickername из symbol
                 tickerData.prices = new ArrayList<>(); // Инициализируем список для хранения TimeframePrices
 
-                for (String timeframe : tf.getTimeframes()) {
+                for (String timeframe : tf.getApiTimeframes()) {
                     try {
                         // Создаем и заполняем TimeframePrices для каждого временного интервала
                         TimeframePrices timeframePrices = new TimeframePrices();

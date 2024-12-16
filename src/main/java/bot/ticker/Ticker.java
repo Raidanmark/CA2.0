@@ -1,7 +1,5 @@
 package bot.ticker;
 
-import bot.data.Data;
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -11,7 +9,6 @@ public class Ticker {
 
     private boolean methodMACD;
     private boolean methodSMA;
-    private Resources resources;
 
 
     private List<Double> closingPrices;
