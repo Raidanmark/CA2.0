@@ -1,5 +1,5 @@
 package bot.data.api;
-import bot.ticker.Price;
+import bot.data.data.Price;
 
 import java.util.List;
 
